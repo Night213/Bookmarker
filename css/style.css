@@ -1,0 +1,81 @@
+:root{
+    --bg-color: #F7ECDE;
+    --bs-btn-hover-bg: #bb4120;
+    --btn-hover-border-color: #a03315;
+    --btn-visit-bg: #9eb23b;
+    --btn-visit-bg-hover: #8A9E23;
+}
+
+@font-face {
+    font-family: 'pacifico';
+    src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Righteous';
+    src: url('../fonts/Righteous-Regular.ttf');
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+h1{
+    font-family: 'pacifico';
+    font-size: 50px;
+    color: #352e28;
+    margin-top: 60px;
+
+}
+
+.bg-bookmarker {
+    background-color: #FEC260;
+    position: relative;
+    top: 20px;
+    width: 270px;
+    height: 20px;
+    transform-origin: bottom; 
+    transform: scaleY(1);
+    margin-top: 60px;
+    transition: transform 0.3s ease-in;
+}
+
+.title-heading:hover .bg-bookmarker {
+    transform: scaleY(2); 
+}
+
+.hr{
+border-top: 2px dotted black;
+margin-top: 80px;
+}
+
+.grad-color{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-family: 'Righteous';
+}
+
+
+.hr2{
+    border-top: 2px dotted black;
+    margin-top: 30px;
+}
+
+.btn-color{
+    background-color: var(--bs-btn-hover-bg);
+}
+
+.btn-submit:hover .btn-color{
+    background-color: var(--btn-hover-border-color);
+}
+
+.btn-visit-color{
+    background-color: var(--btn-visit-bg);
+}
+
+
+.btn-visit-color:hover{
+    background-color: var(--btn-visit-bg-hover);
+}
